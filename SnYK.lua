@@ -14807,29 +14807,29 @@ end)
 
 Misc:AddSeperator("ESP MENU")
     
-    Misc:AddToggle("ESP Player",false,function(a)
+    Misc:AddToggle("ESP Người Chơi",false,function(a)
         ESPPlayer = a
 	UpdatePlayerChams()
     end)
     
-    Misc:AddToggle("ESP Chest",false,function(a)
+    Misc:AddToggle("ESP Rương",false,function(a)
         ChestESP = a
 	UpdateChestChams() 
     end)
     
-    Misc:AddToggle("ESP Fruit",false,function(a)
+    Misc:AddToggle("ESP Trái",false,function(a)
         DevilFruitESP = a
         while DevilFruitESP do wait()
             UpdateDevilChams() 
         end
     end)
     
-    Misc:AddToggle("ESP Real Fruit",RealFruitESP,function(a)
+    Misc:AddToggle("ESP Trái Cây",RealFruitESP,function(a)
         RealFruitESP = a
 	UpdateRealFruitChams() 
     end)
     
-    Misc:AddToggle("ESP Flower",false,function(a)
+    Misc:AddToggle("ESP Hoa",false,function(a)
         FlowerESP = a
 	UpdateFlowerChams() 
     end)
@@ -14852,7 +14852,7 @@ Misc:AddSeperator("ESP MENU")
 		    end
 	    end
     end)
-Misc:AddToggle("ESP Island",IslandESP,function(value)
+Misc:AddToggle("ESP Đảo",IslandESP,function(value)
         IslandESP = value
         while IslandESP do wait()
             UpdateIslandESP() 
